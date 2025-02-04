@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*! base css start*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    background-color: #F5F5F5;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+}
+/*! base css end*/
+
+/*! header start*/
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    background-color: #FFFAEC;
+}
+header h2{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #344CB7;
+    cursor: pointer;
+}
+header h2:hover{
+    opacity: 0.7;
+}
+
+header .header-center .header-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+header .header-center .header-navbar li a{
+    color: #344CB7;
+    font-size: 1.5rem;
+    border:1px solid #344CB7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+header .header-center .header-navbar li a:hover{
+    color: red;
+    border:1px solid red;
+}
+header .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #344CB7;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    background-color: #344CB7;
+}
+header .header-right button{
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: transparent;
+    cursor: pointer;
+    color: #fff;
+}
+header .header-right:hover{
+    opacity: 0.7;
+}
+header .menu-list{
+    display: none;
+}
+/*header responsive*/
+@media (max-width:780px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:630px) {
+    html{
+        font-size: 40%;
+    }
+}
+@media (max-width:510px) {
+    header .header-center .header-navbar{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0.5rem 2rem 4rem 2rem;
+        right: -100%;
+        /* right: 5rem; */
+        width: 20rem;
+        height: 30rem;
+        top: 7rem;
+        background-color: #fff;
+        
+        
+    }
+    header .header-center .header-navbar li a{
+        border: none;
+        font-size: 2rem;
+    }
+    header .header-right{
+        display: flex;
+        position: absolute;
+        right: -100%;
+        /* right: 10rem; */
+        top: 32rem;
+    }
+    header .menu-list{
+        display: flex;
+        font-size: 2.5rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
+
+/*! header end*/
