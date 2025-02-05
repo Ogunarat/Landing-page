@@ -116,8 +116,11 @@ header .menu-list{
         display: flex;
         position: absolute;
         right: -100%;
-        /* right: 10rem; */
         top: 32rem;
+    }
+    header .header-right.active{
+        right: 10rem;
+        transition: 0.3ms ease all;
     }
     header .menu-list{
         display: flex;
